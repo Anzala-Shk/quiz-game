@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .choices {
+            list-style: none;
+            padding: 0;
+        }
+        .choices li {
+            margin-bottom: 10px;
+        }
+        .choices li button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #f1f1f1;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .choices li button:hover {
+            background-color: #e1e1e1;
+        }
+        .result-container {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .result-container h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .timer {
+            text-align: right;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="timer" id="timer">Time left: 30 seconds</div>
+        <div id="quiz-content">
+            <div class="question" id="question"></div>
+            <ul class="choices" id="choices"></ul>
+        </div>
+        <div class="result-container" id="result-container">
+            <h2 id="finalResult"></h2>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
